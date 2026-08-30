@@ -10,7 +10,7 @@ const Work = () => {
     let resume = [
         {
             company: 'Phaidra',
-            title: 'Software Engineer I – Software Engineer II',
+            title: 'Software Engineer II',
             logo: logoPlaceholder,
             logoAlt: 'Placeholder logo for Phaidra — replace with official logo',
             start: '2021',
