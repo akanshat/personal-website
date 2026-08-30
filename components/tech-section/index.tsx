@@ -1,15 +1,9 @@
 'use client';
-// Dependencies
 import { motion } from 'framer-motion';
 
-// Components
-import Tech from './tech';
-
-// HOC
 import { SectionWrapper } from '@/hoc';
-
-// Framer motion variants
 import { slideIn } from '@/lib/motion';
+import Tech from './tech';
 
 function TechSection() {
   return (
