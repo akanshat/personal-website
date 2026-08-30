@@ -1,10 +1,10 @@
 'use client';
 
-// Dependencies
 import {
-  VerticalTimeline,
-  VerticalTimelineElement,
+  VerticalTimeline as OriginalVerticalTimeline,
+  VerticalTimelineElement as OriginalVerticalTimelineElement,
 } from 'react-vertical-timeline-component';
+
 import Image from 'next/image';
 
 // Logos
@@ -15,6 +15,11 @@ import 'react-vertical-timeline-component/style.min.css';
 
 // Pattern
 import topographyAquamarine from '@/public/patterns/topography-aquamarine.svg';
+
+
+// Bypass the strict JSX element type check
+const VerticalTimeline = OriginalVerticalTimeline as any;
+const VerticalTimelineElement = OriginalVerticalTimelineElement as any;
 
 // TODO: LAST — split Phaidra into Software Engineer I vs II
 const experiences = [
