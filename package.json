@@ -1,0 +1,52 @@
+{
+  "name": "nextjs-personal-site",
+  "version": "1.0.0",
+  "description": "My personal nextjs 13 site",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "author": "Akansha Tiwari",
+  "license": "ISC",
+  "dependencies": {
+    "-": "^0.0.1-security.1",
+    "@emailjs/browser": "^3.10.0",
+    "@headlessui/react": "^1.7.14",
+    "@heroicons/react": "^2.0.17",
+    "@react-three/drei": "^9.65.3",
+    "@react-three/fiber": "^8.13.0",
+    "@tailwindcss/forms": "^0.5.3",
+    "@tailwindcss/typography": "^0.5.9",
+    "@types/node": "^18.15.11",
+    "@types/react": "^18.2.17",
+    "@types/react-dom": "^18.0.11",
+    "D": "^1.0.0",
+    "clsx": "^1.2.1",
+    "devicon": "^2.15.1",
+    "eslint": "8",
+    "eslint-config-next": "^13.2.4",
+    "framer-motion": "^10.10.0",
+    "maath": "^0.5.3",
+    "next": "^13.4.12",
+    "postcss-focus-visible": "^8.0.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-hook-form": "^7.43.9",
+    "react-tilty": "^3.0.0",
+    "react-vertical-timeline-component": "^3.6.0",
+    "typescript": "^5.0.4"
+  },
+  "devDependencies": {
+    "@types/react-vertical-timeline-component": "^3.3.3",
+    "@typescript-eslint/eslint-plugin": "8",
+    "@typescript-eslint/parser": "8",
+    "autoprefixer": "^10.4.14",
+    "postcss": "^8.4.21",
+    "prettier": "^3.0.0",
+    "prettier-plugin-tailwindcss": "^0.2.8",
+    "tailwindcss": "^3.3.2"
+  }
+}
