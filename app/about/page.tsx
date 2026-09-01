@@ -7,7 +7,6 @@ import { Container } from '@/components/container';
 import { GitHubIcon, LinkedInIcon, MailIcon } from '@/components/social-icons';
 import portraitImage from '@/public/portrait-1.png';
 import portraitImage2 from '@/public/portrait-2.jpg';
-import galleryArt from '@/public/home-gallery/vaporwave-background-2.png';
 import { ReactNode } from 'react';
 
 interface SocialLinkTypes {
@@ -44,7 +43,6 @@ const About = () => {
         <div className="grid grid-cols-1 gap-y-16 lg:grid-cols-2 lg:grid-rows-[auto_1fr] lg:gap-y-12">
           <div className="lg:pl-20">
             <div className="max-w-xs lg:max-w-none">
-              {/* TODO: LAST — replace avatar.jpg with a real headshot */}
               <Image
                 src={portraitImage}
                 alt="Portrait photo of Akansha Tiwari"
@@ -62,10 +60,7 @@ const About = () => {
               </span>
               , a fullstack software engineer and AI engineer.
             </h1>
-            {/* TODO: LAST — add current city when ready */}
-            {/* Location: [city] */}
             <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
-              {/* TODO: LAST — replace with a full personal About story */}
               <p>
                 I studied Computer Science at ABV-IIITM Gwalior (B.Tech, 2017–2021, CGPA 8.08/10),
                 then spent four years at Phaidra shipping production systems end-to-end, building a debugging
@@ -76,12 +71,12 @@ const About = () => {
                 Before that I led a platform migration at Reliance Jio (native Android to responsive web),
                 contributed meaningful open-source work to Thanos (CNCF) in Go, and interned at Rakuten
                 building internal tooling. Day to day I work in TypeScript, React, Next.js, Node.js, Go,
-                and Java. I'm actively learning Python and deepening my distributed systems knowledge.
+                and Java. I&apos;m actively learning Python and deepening my distributed systems knowledge.
               </p>
               <p>
                 I use Claude and Cursor for daily development and think carefully about how AI tooling
-                fits into sustainable engineering practices. I'm drawn to problems where reliability and
-                observability aren't optional — where good engineering directly impacts users.
+                fits into sustainable engineering practices. I&apos;m drawn to problems where reliability and
+                observability aren&apos;t optional — where good engineering directly impacts users.
               </p>
               <p>
                 Based in India (IST). Open to full-time roles, contract work, and collaboration with
