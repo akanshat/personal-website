@@ -72,7 +72,7 @@ const personalProjects: Project[] = [
   {
     name: 'SmartBrain',
     description:
-      'A RAG chatbot that answers all f1 related queries. Made using nextjs, langchain.js, next.js, ollama and docker.',
+      'A frontend app that uses Clarify AI api to detect faces in any image.',
     tags: [
       { name: 'Clarify', color: 'text-cyan-400' },
       { name: 'Node', color: 'text-sunglow' },
@@ -86,13 +86,11 @@ const personalProjects: Project[] = [
   {
     name: 'Foodcy',
     description:
-      'A RAG chatbot that answers all f1 related queries. Made using nextjs, langchain.js, next.js, ollama and docker.',
+      'A food ordering web app that lets you explore restaurants, menus and post reviews.',
     tags: [
-      { name: 'Go', color: 'text-cyan-400' },
-      { name: 'LangChain', color: 'text-sunglow' },
-      { name: 'RAG', color: 'text-bright-pink' },
       { name: 'TypeScript', color: 'text-green-400' },
       { name: 'React', color: 'text-rose-300' },
+      { name: 'Node', color: 'text-sunglow' },
     ],
     image: foodcyPreview,
     logo: logoPlaceholder,
