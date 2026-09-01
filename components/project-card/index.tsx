@@ -1,6 +1,5 @@
 'use client';
 
-import Tilty from 'react-tilty';
 import { motion } from 'framer-motion';
 import { github } from '@/public/assets';
 import { fadeIn } from '@/lib/motion';
