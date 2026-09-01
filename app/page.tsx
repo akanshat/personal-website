@@ -31,10 +31,10 @@ export default function Home() {
           <div className="mx-auto max-w-2xl gap-x-14 lg:mx-0 lg:flex lg:max-w-none lg:items-center">
             <div className="xl:max-w-wxl w-full max-w-xs lg:shrink-0">
               <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-                Fullstack Software Engineer, AI Engineer, And Lover Of Colors
+                Full-Stack Engineer. Production Obsessed. Always
                 And{' '}
                 <span className="bg-gradient-to-r from-aquamarine to-bright-pink bg-clip-text text-6xl text-transparent sm:text-7xl">
-                  Cats.
+                  Shipping.
                 </span>
               </h1>
               {/* TODO: LAST — add current city when ready */}

@@ -6,6 +6,11 @@ import {
 import Image from 'next/image';
 
 import logoPlaceholder from '@/public/logos/placeholder.svg';
+import RakutenLogo from '@/public/logos/rakuten.png'
+import ThanosLogo from '@/public/logos/thanos-logo.png'
+import JioLogo from '@/public/logos/jio-logo.png'
+import PhaidraLogo from '@/public/logos/phaidra-logo.png'
+
 import 'react-vertical-timeline-component/style.min.css';
 import topographyAquamarine from '@/public/patterns/topography-aquamarine.svg';
 
@@ -22,68 +27,88 @@ interface ExperienceTypes {
     points: string[];
 }
 
-// TODO: LAST — split Phaidra into Software Engineer I vs II
-
 const experiences = [
+    // {
+    //     title: 'Software Engineer Intern',
+    //     company_name: 'EnLume Inc',
+    //     icon: logoPlaceholder,
+    //     iconAlt: 'Placeholder logo for EnLume Inc — replace with official logo',
+    //     iconBg: '#ffffff',
+    //     date: 'Apr 2020 - Jul 2020',
+    //     points: [
+    //         'Implemented and debugged backend services using Node.js, PostgreSQL, and MySQL, shipping features that powered the platform.',
+    //         'Worked on database migrations and optimizations, improving query performance and system reliability.',
+    //         'Contributed to debugging and resolving local deployment issues, helping the team maintain smooth development workflows.',
+    //         'Developed comprehensive Swagger documentation for REST APIs and standardized logging across the backend, improving observability and developer experience.',
+    //         'Researched Jitsi Meet UI integration and contributed technical findings to guide product decisions.',
+    //     ],
+    // },
     {
         title: 'Software Engineer Intern',
         company_name: 'Rakuten',
-        icon: logoPlaceholder,
+        icon: RakutenLogo,
         iconAlt: 'Placeholder logo for Rakuten — replace with official logo',
         iconBg: '#20271f',
         date: 'Jan 2021 - Jun 2021',
         points: [
-            // TODO: expand more
-            'Contributed to frontend development on an internal tooling project, gaining early exposure to production codebases and collaborative engineering workflows.',
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras mattis consectetur purus sit amet fermentum.',
-            'Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes.',
+            'Built a testing tool with automated test plans and test steps for QA developers, streamlining test execution workflows.',
+            'Participated in product requirement planning meetings and design reviews, gaining early exposure to full product development cycles.',
+            'Contributed to frontend development on production codebases and learned collaborative engineering workflows.',
         ],
     },
     {
         title: 'Software Engineer',
         company_name: 'Reliance Jio',
-        icon: logoPlaceholder,
+        icon: JioLogo,
         iconAlt: 'Placeholder logo for Reliance Jio — replace with official logo',
         iconBg: '#ffffff',
         date: 'Jul 2021 - Nov 2021',
         points: [
-            // TODO: expand more
-            'Delivered production features for a large-scale B2B partner onboarding platform and led migration of partner workflows from native Android to responsive web, maintaining full functional parity across platforms.',
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.',
-            'Maecenas faucibus mollis interdum. Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper.',
+            'Led migration of the JioMart B2B app from native Android to a responsive web application, maintaining full functional parity across platforms.',
+            'Shipped production features for a large-scale B2B partner onboarding platform used by thousands of partners.',
+            'Wrote comprehensive test coverage and established a design system for the product, standardizing UI components and design patterns.',
         ],
     },
     {
         title: 'LFX Mentee – Open Source Mentorship',
         company_name: 'Thanos, CNCF',
-        icon: logoPlaceholder,
+        icon: ThanosLogo,
         iconAlt: 'Placeholder logo for Thanos / CNCF — replace with official logo',
-        iconBg: '#20271f',
+        iconBg: '#975EF8',
         date: 'Sep 2021 - Nov 2021',
         points: [
             'Implemented a caching layer in Go for Thanos Store, improving query reliability across distributed storage workflows.',
-            'Refactored to use galaxycache after maintainer review, ramping quickly in a large production codebase and incorporating expert feedback under real constraints.',
+            'Refactored the design to use galaxycache following maintainer review, demonstrating ability to ramp quickly in a large production codebase and incorporate expert feedback.',
         ],
     },
     {
-        title: 'Software Engineer I – Software Engineer II',
+        title: 'Software Engineer I',
         company_name: 'Phaidra',
-        icon: logoPlaceholder,
+        icon: PhaidraLogo,
         iconAlt: 'Placeholder logo for Phaidra — replace with official logo',
-        iconBg: '#ED1C24',
-        date: 'Dec 2021 - Jan 2026',
+        iconBg: '#A3EC9F',
+        date: 'Dec 2021 - Jul 2023',
         points: [
-            // TODO: expand more — product name (if public), metrics, team size
-            'Designed and shipped a production debugging tool for industrial plant operators, replacing manual log triage with step-by-step visual execution traces so operations teams could see automation failures without engineering involvement.',
-            'Led the system from an ambiguous brief to production adoption: chose a timeline execution model over tabular output, aligned engineering, product, and operations, and delivered the team’s primary debugging workflow.',
-            'Built a versioned constraint evaluation engine so operators could update automation rules without risking production regressions.',
-            'Defined versioning and change-management semantics from scratch, aligned stakeholders across competing models, and shipped a maintainable MVP on deadline.',
-            'Owned frontend on-call: investigated, diagnosed, fixed, and verified production issues, coordinating with backend and platform for cross-boundary failures.',
-            'Used AI-assisted tools including Cursor and Claude to speed up implementation, testing, and documentation while keeping engineering standards high.',
+            'Designed and shipped a production debugging tool for industrial plant operators, replacing manual log triage with step-by-step visual execution traces so operations teams could diagnose automation failures without engineering involvement.',
+            "Led the system from an ambiguous brief to production adoption: chose a timeline execution model over tabular output, aligned engineering, product, and operations stakeholders, and delivered the team's primary debugging workflow.",
+            'Built a versioned constraint evaluation engine enabling operators to safely update automation rules without risking production regressions.',
+        ],
+    },
+    {
+        title: 'Software Engineer II',
+        company_name: 'Phaidra',
+        icon: PhaidraLogo,
+        iconAlt: 'Placeholder logo for Phaidra — replace with official logo',
+        iconBg: '#F82C16',
+        date: 'Jul 2023 - Jan 2026',
+        points: [
+            'Defined versioning and change-management semantics from scratch in an ambiguous problem space, aligned stakeholders across competing models, and shipped a correct, maintainable constraint evaluation system on deadline.',
+            'Owned frontend on-call: investigated, diagnosed, fixed, and verified production issues, coordinating with backend and platform teams for cross-boundary distributed system failures.',
+            'Used AI-assisted development tools including Cursor and Claude to accelerate implementation, testing, and documentation while maintaining high engineering standards.',
+            'Contributed to architectural and design decisions across the product, helping shape technical direction and engineering standards for the team.',
         ],
     },
 ];
-
 const ExperienceCard = ({ experience }: { experience: ExperienceTypes }) => {
     return (
         <VerticalTimelineElement

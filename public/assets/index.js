@@ -16,9 +16,14 @@ import sass from './tech/sass.png';
 import tailwind from './tech/tailwind.png';
 import typescript from './tech/typescript.png';
 import threejs from './tech/threejs.png';
-import csharp from './tech/csharp.png';
 import golang from './tech/golang.png';
-import dotnetcore from './tech/dotnetcore.png';
+import java from './tech/java.png'
+import mui from './tech/mui.png'
+import playwright from './tech/playwright.png'
+import redux from './tech/redux.png'
+import postgresql from './tech/postgresql.png'
+import langchain from './tech/langchain.png'
+import claude from './tech/claude.png'
 
 export {
   github,
@@ -38,7 +43,12 @@ export {
   tailwind,
   typescript,
   threejs,
-  csharp,
   golang,
-  dotnetcore,
+  claude,
+  java,
+  langchain,
+  redux,
+  postgresql,
+  playwright,
+  mui,
 };

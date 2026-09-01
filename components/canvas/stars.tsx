@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useRef, Suspense } from 'react';
-import { Canvas, PointsProps, useFrame } from '@react-three/fiber';
+import { Canvas, useFrame } from '@react-three/fiber';
 import { Points, PointMaterial, Preload } from '@react-three/drei';
 import * as three from 'three';
 import { random } from 'maath';
@@ -9,7 +9,7 @@ import { random } from 'maath';
 const Stars = (props: any) => {
   const ref = useRef<three.Points>(null);
   const [sphere] = useState(() =>
-    random.inSphere(new Float32Array(5000), { radius: 1.2 })
+    random.inSphere(new Float32Array(5001), { radius: 1.2 })
   );
 
   useFrame((state, delta) => {

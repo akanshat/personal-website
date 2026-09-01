@@ -1,23 +1,24 @@
 'use client';
 
 import { SectionWrapper } from '@/hoc';
-import BallCanvas from '../canvas/ball';
+import { BallView, GlobalCanvas } from '../canvas/ball';
 
 import { technologies } from '@/lib/constants';
 
-interface TechnologyTypes {
-  name: string;
-  icon: any;
-}
 
 function Tech() {
   return (
     <div className="flex flex-row flex-wrap justify-center gap-10">
-      {technologies.map((technology: TechnologyTypes) => (
-        <div className="h-28 w-28" key={technology.name}>
-          <BallCanvas icon={technology.icon} />
+      <GlobalCanvas>
+        <div className="flex flex-row flex-wrap justify-center gap-10 p-10">
+          {technologies.map((tech, index) => (
+            <BallView
+              key={tech.name}
+              icon={tech.icon}
+            />
+          ))}
         </div>
-      ))}
+      </GlobalCanvas>
     </div>
   );
 }

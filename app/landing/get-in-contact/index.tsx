@@ -16,7 +16,7 @@ const GetInContact = () => {
                 akanshat1999@gmail.com
             </p>
             <Button
-                href="mailto:akanshat1999@gmail.com"
+                href="/contact"
                 variant="primary"
                 text="Email me"
                 type="button"

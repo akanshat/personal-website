@@ -437,6 +437,9 @@ export function Header() {
                 className="top-[var(--avatar-top,theme(spacing.3))] w-full"
                 style={
                   {
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'space-between',
                     position: 'var(--header-inner-position)',
                   } as CSSPropertiesWithVars
                 }

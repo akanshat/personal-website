@@ -4,7 +4,7 @@ import { useMotionValue, useTransform, motion } from 'framer-motion';
 
 export default function HeroCard() {
   const subtitle =
-    'Fullstack products, AI systems, and a stubborn love of color';
+    'From API design to production observability. Building systems people depend on.';
 
   // Framer values
   const x = useMotionValue(0);
@@ -47,7 +47,7 @@ export default function HeroCard() {
         <div className="h-full overflow-hidden">
           <div className="card-content">
             <h3 className="text-4xl font-semibold text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-              I ship tools people can actually operate
+              I turn ambiguous problems into reliable systems
             </h3>
             <h4 className="card-subtitle mt-2 text-3xl text-zinc-100 sm:text-4xl">
               {createSubtitle(subtitle)}

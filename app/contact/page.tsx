@@ -4,8 +4,7 @@ import { Metadata } from 'next';
 import Button from '@/components/button';
 import { Container } from '@/components/container';
 import Earth from '@/components/canvas/earth';
-// TODO: LAST — restore ContactForm when EmailJS is set up
-// import ContactForm from '@/components/ContactForm';
+import ContactForm from '@/components/contact-form';
 
 export const metadata: Metadata = {
   title: 'Contact',
@@ -33,23 +32,7 @@ export default function Contact() {
       <Container className="mt-8 sm:mt-16">
         <div className="flex flex-col gap-10 overflow-hidden xl:flex-row-reverse xl:items-center">
           <Earth />
-          <div className="isolate flex-[0.75] rounded-3xl border border-sunglow bg-space-cadet bg-topography-sunglow py-12 px-6">
-            <div className="mx-auto max-w-xl rounded-md bg-[#ffffff33] p-2 backdrop-blur-[10px]">
-              <p className="mt-2 text-lg leading-8 text-zinc-800">
-                Email is the fastest path. I always check my email.
-              </p>
-              <h2 className="bg-gradient-to-r from-sunglow to-bright-pink bg-clip-text text-3xl font-bold tracking-tight text-transparent sm:text-4xl">
-                akanshat1999@gmail.com
-              </h2>
-            </div>
-            <Button
-              href="mailto:akanshat1999@gmail.com"
-              variant="primary"
-              className="group mt-10 w-full max-w-xl"
-              text="Email me"
-              type="button"
-            />
-          </div>
+          <ContactForm />
         </div>
       </Container>
     </>

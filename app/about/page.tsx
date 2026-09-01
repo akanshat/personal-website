@@ -5,7 +5,8 @@ import clsx from 'clsx';
 
 import { Container } from '@/components/container';
 import { GitHubIcon, LinkedInIcon, MailIcon } from '@/components/social-icons';
-import portraitImage from '@/public/avatar.jpg';
+import portraitImage from '@/public/portrait-1.png';
+import portraitImage2 from '@/public/portrait-2.jpg';
 import galleryArt from '@/public/home-gallery/vaporwave-background-2.png';
 import { ReactNode } from 'react';
 
@@ -66,24 +67,25 @@ const About = () => {
             <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
               {/* TODO: LAST — replace with a full personal About story */}
               <p>
-                I studied Computer Science at ABV-IIITM Gwalior (B.Tech,
-                2017–2021, CGPA 8.08/10), then spent four years at Phaidra
-                shipping production tools for industrial plant operators —
-                visual execution traces, versioned constraint evaluation, and
-                frontend on-call ownership.
+                I studied Computer Science at ABV-IIITM Gwalior (B.Tech, 2017–2021, CGPA 8.08/10),
+                then spent four years at Phaidra shipping production systems end-to-end, building a debugging
+                tool for industrial operators, a versioned constraint evaluation engine, and frontend
+                on-call ownership across production incidents.
               </p>
               <p>
-                Before that I contributed to Thanos (CNCF) as an LFX mentee,
-                built partner-onboarding software at Reliance Jio, and interned
-                at Rakuten. Day to day I work in TypeScript, React, Next.js,
-                Node, Go, and Java, and I am leaning harder into AI engineering:
-                LangChain, RAG, and AI-assisted development with Cursor and
-                Claude.
+                Before that I led a platform migration at Reliance Jio (native Android to responsive web),
+                contributed meaningful open-source work to Thanos (CNCF) in Go, and interned at Rakuten
+                building internal tooling. Day to day I work in TypeScript, React, Next.js, Node.js, Go,
+                and Java. I'm actively learning Python and deepening my distributed systems knowledge.
               </p>
-              {/* TODO: LAST — optional personal details (hobbies, languages, volunteer) */}
               <p>
-                Off the clock I am a lover of colors and cats. I am open to
-                full-time roles, interviewing, and freelance.
+                I use Claude and Cursor for daily development and think carefully about how AI tooling
+                fits into sustainable engineering practices. I'm drawn to problems where reliability and
+                observability aren't optional — where good engineering directly impacts users.
+              </p>
+              <p>
+                Based in India (IST). Open to full-time roles, contract work, and collaboration with
+                strong teams.
               </p>
             </div>
           </div>
@@ -110,7 +112,7 @@ const About = () => {
             <div className="mt-8 border-t border-aquamarine pt-8">
               <div className="max-w-xs lg:max-w-none">
                 <Image
-                  src={galleryArt}
+                  src={portraitImage2}
                   alt="Vaporwave artwork"
                   sizes="(min-width: 1024px) 32rem, 20rem"
                   className="aspect-square rounded-2xl bg-zinc-100 object-cover dark:bg-zinc-800"

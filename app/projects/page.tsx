@@ -5,13 +5,17 @@ import { SimpleLayout } from '@/components/simple-layout';
 
 /* Placeholder images until real project screenshots and logos are added */
 import logoPlaceholder from '@/public/logos/placeholder.svg';
-import screenshotPlaceholder from '@/public/home-gallery/vaporwave-background-1.png';
+import f1gptPreview from '@/public/assets/projects/f1-gpt.png'
+import crwnClothingPreview from '@/public/assets/projects/crwn-clothing.png'
+import foodcyPreview from '@/public/assets/projects/foodcy.png'
+import smartbrainPreview from '@/public/assets/projects/smartbrain.png'
+import jobListingPreview from '@/public/assets/projects/job-listings.png'
 
 type Project = {
   name: string;
   description: string;
   tags: { name: string; color: string }[];
-  image: typeof screenshotPlaceholder;
+  image: typeof f1gptPreview;
   logo: typeof logoPlaceholder;
   appLink?: string;
   sourceCodeLink?: string;
@@ -19,35 +23,96 @@ type Project = {
 
 // TODO: LAST — add professional projects (screenshots, links, tags)
 const professionalProjects: Project[] = [
-  {
-    name: 'Professional project placeholder',
-    description:
-      'Placeholder for a professional project (Phaidra debugging tool, constraint engine, Jio partner onboarding, and so on). Replace this card when you have a public write-up, screenshot, and links.',
-    tags: [
-      { name: 'TypeScript', color: 'text-blue-400' },
-      { name: 'React', color: 'text-aquamarine' },
-      { name: 'Next.js', color: 'text-zinc-100' },
-    ],
-    image: screenshotPlaceholder,
-    logo: logoPlaceholder,
-  },
+  // {
+  //   name: 'Professional project placeholder',
+  //   description:
+  //     'Placeholder for a professional project (Phaidra debugging tool, constraint engine, Jio partner onboarding, and so on). Replace this card when you have a public write-up, screenshot, and links.',
+  //   tags: [
+  //     { name: 'TypeScript', color: 'text-blue-400' },
+  //     { name: 'React', color: 'text-aquamarine' },
+  //     { name: 'Next.js', color: 'text-zinc-100' },
+  //   ],
+  //   image: screenshotPlaceholder,
+  //   logo: logoPlaceholder,
+  // },
 ];
 
 // TODO: LAST — add personal / open-source projects and an AI / LangChain / RAG card
 const personalProjects: Project[] = [
   {
-    name: 'Personal project placeholder',
+    name: 'F1 GPT',
     description:
-      'Placeholder for GitHub work (Thanos Store cache, side projects, RAG / LangChain). Add name, stack, repo, live demo, and screenshot later.',
+      'A RAG chatbot that answers all f1 related queries. Made using nextjs, langchain.js, next.js, ollama and docker.',
+    tags: [
+      { name: 'Go', color: 'text-cyan-400' },
+      { name: 'LangChain', color: 'text-sunglow' },
+      { name: 'RAG', color: 'text-violet-300' },
+      { name: 'TypeScript', color: 'text-green-400' },
+      { name: 'Next.js', color: 'text-rose-300' },
+    ],
+    image: f1gptPreview,
+    logo: logoPlaceholder,
+    sourceCodeLink: 'https://github.com/akanshat/f1-gpt-rag',
+  },
+  {
+    name: 'Crown Clothing',
+    description:
+      'An online store that lets you build a cart and checkout using stripe.',
+    tags: [
+      { name: 'React', color: 'text-rose-300' },
+      { name: 'TypeScript', color: 'text-green-400' },
+      { name: 'Firebase', color: 'text-cyan-400' },
+      { name: 'Stripe', color: 'text-sunglow' },
+    ],
+    image: crwnClothingPreview,
+    logo: logoPlaceholder,
+    sourceCodeLink: 'https://github.com/akanshat/crwn-clothing',
+    appLink: "https://crwn-clothing-9e4d.vercel.app/",
+  },
+  {
+    name: 'SmartBrain',
+    description:
+      'A RAG chatbot that answers all f1 related queries. Made using nextjs, langchain.js, next.js, ollama and docker.',
+    tags: [
+      { name: 'Clarify', color: 'text-cyan-400' },
+      { name: 'Node', color: 'text-sunglow' },
+      { name: 'React', color: 'text-rose-300' },
+      { name: 'TypeScript', color: 'text-green-400' },
+    ],
+    image: smartbrainPreview,
+    logo: logoPlaceholder,
+    sourceCodeLink: 'https://github.com/akanshat/smartbrain-frontend',
+  },
+  {
+    name: 'Foodcy',
+    description:
+      'A RAG chatbot that answers all f1 related queries. Made using nextjs, langchain.js, next.js, ollama and docker.',
     tags: [
       { name: 'Go', color: 'text-cyan-400' },
       { name: 'LangChain', color: 'text-sunglow' },
       { name: 'RAG', color: 'text-bright-pink' },
+      { name: 'TypeScript', color: 'text-green-400' },
+      { name: 'React', color: 'text-rose-300' },
     ],
-    image: screenshotPlaceholder,
+    image: foodcyPreview,
     logo: logoPlaceholder,
-    sourceCodeLink: 'https://github.com/akanshat',
+    sourceCodeLink: 'https://github.com/akanshat/foodcy-frontend',
   },
+  // {
+  //   name: 'JinxedIn',
+  //   description:
+  //     'A job portal to search your openings, apply and get hired. Made using nextjs, tailwindcss, shadcn/ui, and supabase.',
+  //   tags: [
+  //     { name: 'Go', color: 'text-cyan-400' },
+  //     { name: 'LangChain', color: 'text-sunglow' },
+  //     { name: 'RAG', color: 'text-bright-pink' },
+  //     { name: 'TypeScript', color: 'text-sea-blue' },
+  //   ],
+  //   image: jobListingPreview,
+  //   logo: logoPlaceholder,
+  //   sourceCodeLink: 'https://github.com/akanshat/f1-gpt-rag',
+  //   appLink: 'https://job-listings-ui.vercel.app/',
+  // },
 ];
 
 function HighLightedWord() {
@@ -68,20 +133,20 @@ export default function Projects() {
   return (
     <SimpleLayout
       HighlightedWord={HighLightedWord()}
-      title="Things I've Built For Operators, Partners, And Myself"
-      intro="A short list of work I am proud of. Professional cards and personal repos will land here once screenshots and write-ups are ready."
+      title="All The Rad Things That I've Made Over The Years"
+      intro="A short list of work I am proud of. Check out the repos and live links if you like them 🥰."
     >
-      <h2 className="text-4xl font-semibold text-aquamarine sm:text-5xl">
+      {/* <h2 className="text-4xl font-semibold text-aquamarine sm:text-5xl">
         Professional Projects
       </h2>
       <div className="mt-10 grid grid-cols-1 gap-x-6 gap-y-16 tablet:grid-cols-2 xl:grid-cols-3">
         {professionalProjects.map((project, index) => (
           <ProjectCard key={`project-${index}`} index={index} {...project} />
         ))}
-      </div>
-      <h2 className="mt-10 text-4xl font-semibold text-bright-pink sm:text-5xl">
+      </div> */}
+      {/* <h2 className="mt-10 text-4xl font-semibold text-bright-pink sm:text-5xl">
         Personal Projects
-      </h2>
+      </h2> */}
       <div className="mt-10 grid grid-cols-1 gap-x-6 gap-y-16 tablet:grid-cols-2 xl:grid-cols-3">
         {personalProjects.map((project, index) => (
           <ProjectCard key={`project-${index}`} index={index} {...project} />

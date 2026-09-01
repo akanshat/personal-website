@@ -11,6 +11,15 @@ import {
   mongodb,
   git,
   docker,
+  sass,
+  claude,
+  java,
+  langchain,
+  redux,
+  postgresql,
+  playwright,
+  mui,
+  figma,
 } from '../public/assets';
 
 const technologies = [
@@ -62,6 +71,42 @@ const technologies = [
     name: 'git',
     icon: git,
   },
+  {
+    name: 'sass',
+    icon: sass,
+  },
+  {
+    name: 'Redux',
+    icon: redux,
+  },
+  {
+    name: 'Java',
+    icon: java,
+  },
+  {
+    name: 'PostgreSQL',
+    icon: postgresql,
+  },
+  {
+    name: 'Playwright',
+    icon: playwright,
+  },
+  {
+    name: 'Material UI',
+    icon: mui,
+  },
+  {
+    name: 'LangChain',
+    icon: langchain,
+  },
+  {
+    name: 'claude',
+    icon: claude,
+  },
+  {
+    name: 'figma',
+    icon: figma,
+  }
 ];
 
 export { technologies };

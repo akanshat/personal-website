@@ -61,6 +61,7 @@ export default function ProjectCard({
           <div className="absolute inset-0 m-3 flex justify-end">
             {sourceCodeLink && (
               <Link
+                target="_blank"
                 href={sourceCodeLink}
                 className="flex h-10 w-10 cursor-pointer items-center justify-center rounded-full bg-gradient-to-tr from-slate-600 to-slate-900 transition-all duration-200 ease-in hover:h-12 hover:w-12"
               >
@@ -87,27 +88,29 @@ export default function ProjectCard({
         </div>
 
         <div className="mt-5 rounded-md bg-[#ffffff33] p-1 backdrop-blur-[10px]">
-          <h3 className="flex justify-between text-[24px] font-bold text-zinc-100">
-            <p className="max-w-[200px]">{name} </p>
-            <div className="z-10 flex h-10 w-10 items-center justify-center rounded-full bg-white shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
+          <h3 className="flex justify-evenly text-[24px] font-bold text-zinc-100">
+            {name}
+            {/* <p className="max-w-[200px]">{name} </p> */}
+            {/* <div className="z-10 flex h-10 w-10 items-center justify-center rounded-full bg-white shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
               <img src={logo.src} alt="project logo" className="h-6 w-6" />
-            </div>
+            </div> */}
           </h3>
           <p className="text-secondary mt-2 text-[14px] text-zinc-200">
             {description}
           </p>
         </div>
 
-        <div className="mt-4 flex flex-wrap gap-2 rounded-md bg-[#ffffff33] p-1 text-center backdrop-blur-[10px]">
+        <div className="mt-4 flex flex-wrap items-center gap-2 rounded-md bg-[#ffffff33] p-1 pl-2.5 text-center backdrop-blur-[10px]">
           {tags.map((tag, index) => (
             <>
               <p
                 key={`${name}-${tag.name}`}
                 className={`text-[14px] ${tag.color}`}
+                style={{ fontWeight: '500' }}
               >
                 {tag.name}
               </p>
-              <p className="text-white">{index !== tags.length - 1 && '|'}</p>
+              <p className="text-white" style={{ fontSize: '0.875rem', fontWeight: '700' }}>{index !== tags.length - 1 && '|'}</p>
             </>
           ))}
         </div>
