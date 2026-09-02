@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import { Metadata } from 'next';
+import { Analytics } from "@vercel/analytics/next"
 
 import { Container, OuterContainer } from '@/components/container';
 import HeroCard from '@/components/hero-card';
@@ -26,6 +27,7 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <>
+      <Analytics />
       <Container className="mt-9">
         <div className="overflow-hidden">
           <div className="mx-auto max-w-2xl gap-x-14 lg:mx-0 lg:flex lg:max-w-none lg:items-center">
